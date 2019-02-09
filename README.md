@@ -30,7 +30,7 @@ phpfu 0.1.0 by nakamura244.
 
 Unuse code?: 
 
-method: a: [path]/test3.php:5-13
+method: a: [path]/example.php:5-13
 bytecode: 
 BB3: unreachable lines=[4-4]
 BB4: unreachable lines=[5-5]
