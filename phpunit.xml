@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit colors="true"
+         stopOnFailure="true"
+         stopOnError="true"
+         stderr="true"
+         bootstrap="./vendor/autoload.php">
+    <php>
+        <ini name="memory_limit" value="1G"/>
+        <ini name="realpath_cache_size" value="1M"/>
+    </php>
+    <testsuites>
+        <testsuite name="phpfu Test Suite">
+            <directory suffix=".php">./tests</directory>
+        </testsuite>
+    </testsuites>
+    <filter>
+        <whitelist addUncoveredFilesFromWhitelist="true">
+            <directory suffix=".php">./src</directory>
+        </whitelist>
+    </filter>
+</phpunit>
