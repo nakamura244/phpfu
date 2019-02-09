@@ -1,0 +1,33 @@
+{
+    "name": "nakamura244/phpfu",
+    "description": "Tool to find unuse code by OpCache's bytecode optimizer",
+    "keywords": ["OpCache", "optimizer"],
+    "type": "library",
+    "license": "MIT",
+    "homepage": "https://github.com/nakamura244/phpfu",
+    "authors": [
+        {
+            "name": "nakamura244",
+            "email": "tsuyoshin@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">= 7.1.3",
+        "symfony/console": "^4.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "3.7.*"
+    },
+    "autoload": {
+        "classmap": [
+            "src/"
+        ]
+    },
+    "bin": [
+      "fu"
+    ],
+    "scripts": {
+        "l": "php -l ./src",
+        "test": "./vendor/bin/phpunit -c ./phpunit.xml"
+    }
+}
